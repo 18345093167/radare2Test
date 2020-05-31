@@ -12,3 +12,5 @@
 考察点：堆溢出、fast bin attack
 难度：简单
 
+'\xe8\x1f\x00\x00%6$s'
+

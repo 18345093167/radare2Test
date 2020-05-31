@@ -1,20 +1,15 @@
-//gcc test.c -o test -m32
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-int test(int a,int b){
-	//int len = 0;
-	//len = strlen(a);
-	return a+b;
-}
-int main()
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+void win()
 {
-      	printf("hello world");
- 	char a[100];
-	scanf("%s",a);
-	printf(a);
-	int len = test(1,2);
-	printf("%d\n",len);
-        return 0;
+system("/usr/bin/bc");
 }
-
+void main(int argc, char *argv[])
+{
+char buf[103];
+fgets(buf, 103, stdin);
+buf[strlen(buf)-1] = 0x0;
+printf(buf);
+exit(0);
+}
