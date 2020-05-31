@@ -3,7 +3,7 @@
 #include <stdlib.h>
 void win()
 {
-system("/usr/bin/bc");
+system("/bin/sh");
 }
 void main(int argc, char *argv[])
 {
